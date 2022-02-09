@@ -1,0 +1,83 @@
+h1 {
+     font-size: 2.25em;
+}
+h2 {
+     font-size: 1.875empx;
+}
+h3 {
+     font-size: 1.25em;
+}
+h4 {
+     font-size: 1.05em;
+}
+h5 {
+     font-size: 0.88333333333333em;
+}
+h6 {
+     font-size: 0.8em;
+}
+small {
+     font-size: smaller;
+}
+mark,
+.mark {
+     background-color: #fcf8e3;
+     padding: 0.2em;
+}
+::selection {
+     background: #2040ff;
+}
+body {
+     user-select: contain;
+}
+.text-blue::selection {
+     color: #0a0a0a;
+}
+body[mode*="dark"].text-blue::selection {
+     color: #fffafa;
+}
+.no-select {
+     -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+}
+a {
+     text-decoration: none;
+}
+a:hover {
+     text-decoration: underline;
+}
+[href]:not(button):not([class*="btn"]):not([class*="text"]) {
+     color: #2040ff;
+     cursor: pointer;
+}
+[href]:not(button):not([class*="btn"]):not([class*="text"]):hover {
+     text-decoration: underline;
+}
+[href]:not(button):not([class*="btn"]):not([class*="text"])::selection {
+     color: #0a0a0a;
+}
+body[mode*="dark"]
+     [href]:not(button):not([class*="btn"]):not([class*="text"])::selection {
+     color: #fffafa;
+}
+.center {
+     text-align: center;
+}
+.media-scroller:is(.center) {
+     display: block;
+     text-align: center;
+}
+.media-scroller:is(.center) .media-element {
+     text-align: left;
+}
+code,
+pre {
+     font-family: "Cascadia Code", bold;
+     -webkit-font-smoothing: antialiased;
+     -webkit-text-stroke-width: 0.25px;
+     -moz-osx-font-smoothing: grayscale;
+}

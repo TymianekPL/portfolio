@@ -1,0 +1,23 @@
+.menu {
+     background: rgb(60, 56, 56);
+     width: 100%;
+     height: 50px;
+     border-radius: 4px;
+     margin-bottom: 11px;
+}
+
+.menu :not(.title) {
+     float: right;
+     margin-right: 0px;
+     border-radius: 4px;
+}
+.title {
+     float: left;
+}
+
+
+.menu * {
+     height: 100%;
+     float: left;
+     display: block;
+}

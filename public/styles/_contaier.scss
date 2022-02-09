@@ -1,0 +1,16 @@
+.container {
+     padding-left: var(--margins);
+     padding-right: var(--margins);
+     margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+     .container {
+          padding-left: 1vw;
+          padding-right: 1vw;
+          margin-top: 5px;
+     }
+     body {
+          font-size: smaller;
+     }
+}

@@ -1,0 +1,18 @@
+.group {
+     display: block;
+     width: 99%;
+     text-align: center;
+}
+.group-item {
+     display: inline-block;
+     height: 100px;
+     border: 1px solid #0e0e0e;
+     width: calc(33% - 2px);
+     margin-bottom: 4.5px;
+     padding-top: 50px;
+}
+.borderer {
+     border: 2px double #2f2f2f;
+     padding: 10px;
+     max-width: calc(100% - 10px);
+}

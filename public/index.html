@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Tymianek portfolio</title>
+          <link rel="stylesheet" href="styles/main.scss">
+          <meta name="description" content="Tymianek portfolio">
+     </head>
+
+     <body>
+          <div class="container">
+               <div class="tab menu">
+                    <button class="tablinks" onclick="openTab(event, 'Home')" id="default">Home</button>
+                    <button class="tablinks" onclick="openTab(event, 'Contact')" id="#Contact">Contact</button>
+                    <button class="tablinks" onclick="openTab(event, 'Projects')" id="#Projects">Projects</button>
+               </div>
+               <div id="snackbar"></div>
+
+               <div id="Home-page" class="tabcontent">
+                    <div class="type-writer">
+                         <h3>Home</h3>
+                         <h1>Hello, I am Tymianek!</h1>
+                    </div>
+               </div>
+               <div id="Contact-page" class="tabcontent">
+                    <div class="type-writer">
+                         <h3>Contact</h3>
+                         Discord: <address href style="display: inline; user-select: none;" title="Click to copy" onclick="navigator.clipboard.writeText(this.innerHTML);showSnackbar('Copied!', 'background: #2eF920; user-select: none;');">Tymianek#2403</address>
+                    </div>
+               </div>
+
+               <div id="Projects-page" class="tabcontent">
+                    <h3>Projects</h3>
+                    <div class="grid-container">
+                         <div class="grid-item">
+                              <img src="images/mapmaking-online.png" alt="mapmaking online"
+                                   onerror="this.src = `/images/unknown.png`;" />
+                              <p>Mapmaking online site</p>
+                         </div>
+                         <div class="grid-item">
+                              <img src="images/FancyUI.png" alt="fancy ui"
+                                   onerror="this.src = `/images/unknown.png`;" />
+                              <p>Fancy-UI framework</p>
+                         </div>
+                         <div class="grid-item">
+                              <img src="images/tools.png" alt="tools" onerror="this.src = `/images/unknown.png`;" / />
+                              <p>Tools library for C#</p>
+                         </div>
+                         <div class="grid-item">
+                              <img src="images/tools-site.png" alt="tools"
+                                   onerror="this.src = `/images/unknown.png`;" />
+                              <p>Site for Tools package</p>
+                         </div>
+                         <div class="grid-item">
+                              <img src="images/this-site.png" alt="portfolio"
+                                   onerror="this.src = `/images/unknown.png`;" />
+                              <p>Portfolio, you are here!</p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <script src="scripts/main.js"></script>
+     </body>
+
+</html>
