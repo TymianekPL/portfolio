@@ -1,25 +1,76 @@
 :root {
-     --grid-spacing: 0.7rem;
+     --grid-spacing: 0.5rem;
 }
+
 .grid-container {
      display: grid;
      grid-template-columns: auto auto auto;
+     grid-gap: var(--grid-spacing) var(--grid-spacing);
+}
+
+.grid-color {
+     padding-left: 0;
+     margin-left: 0;
+     border-radius: 3px;
      padding: var(--grid-spacing);
-     background-color: #2d2d2d;
-     grid-gap: calc(var(--grid-spacing) / 2) var(--grid-spacing);
+
+}
+
+.grid-color > h1 {
+     text-align: left;
+     padding-left: 1px;
 }
 
 .grid-item {
-     background-color: rgba(100, 100, 100, 0.8);
-     border: 1px solid rgba(0, 0, 0, 0.8);
-     padding: 20px;
-     font-size: 30px;
-     text-align: center;
+     background-color: #393939;
+     border-radius: 3.5px;
+     padding: 0.6rem 0.6rem 110px;
+     font-size: 21px;
+     text-align: left;
+     position: relative;
+     min-height: 150px;
 }
 
-.grid-item > img {
+.grid-item > p {
+     margin: 0;
+     bottom: 10px;
+     left: var(--grid-spacing);
+     position: absolute;
+     -webkit-text-stroke: 0.15px;
+     color: lightgray;
+}
+.grid-item > h2 {
+     margin: 0;
+     bottom: 4.2rem;
+     left: var(--grid-spacing);
+     position: absolute;
+     -webkit-text-stroke: 0.2px;
+     font-size: 1.4rem;
+}
+
+.grid-item .grid-item-inner{
      inline-size: 100%;
      aspect-ratio: 16 / 9;
+     border-radius: 4px;
+}
+.grid-item > .grid-item-inner img {
      object-fit: cover;
-     border-radius: 4.4px;
+}
+
+.grid-item {
+     background-color: #2a2a2a;
+}
+
+@media (max-width: 1000px) {
+     .grid-container {
+          margin: 0;
+     }
+
+     .grid-item {
+          font-size: 1.3rem;
+     }
+
+     .grid-item > h2 {
+          bottom: 5.5rem;
+     }
 }

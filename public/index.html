@@ -16,51 +16,94 @@
                     <button class="tablinks" onclick="openTab(event, 'Home')" id="default">Home</button>
                     <button class="tablinks" onclick="openTab(event, 'Contact')" id="#Contact">Contact</button>
                     <button class="tablinks" onclick="openTab(event, 'Projects')" id="#Projects">Projects</button>
+                    <div class="title text" href="/">Tymianek portfolio</div>
                </div>
                <div id="snackbar"></div>
 
                <div id="Home-page" class="tabcontent">
+                    <h1>Home</h1>
                     <div class="type-writer">
-                         <h3>Home</h3>
                          <h1>Hello, I am Tymianek!</h1>
                     </div>
                </div>
                <div id="Contact-page" class="tabcontent">
-                    <div class="type-writer">
-                         <h3>Contact</h3>
-                         Discord: <address href style="display: inline; user-select: none;" title="Click to copy" onclick="navigator.clipboard.writeText(this.innerHTML);showSnackbar('Copied!', 'background: #2eF920; user-select: none;');">Tymianek#2403</address>
-                    </div>
+                    <h1>Contact</h1>
+                    Discord: <address href style="display: inline; user-select: none;" title="Click to copy"
+                         onclick="navigator.clipboard.writeText(this.innerHTML);showSnackbar('Copied!', 'background: #2eF920; user-select: none;');"
+                         class="typewriter">Tymianek#2403</address>
                </div>
 
                <div id="Projects-page" class="tabcontent">
-                    <h3>Projects</h3>
-                    <div class="grid-container">
-                         <div class="grid-item">
-                              <img src="images/mapmaking-online.png" alt="mapmaking online"
-                                   onerror="this.src = `/images/unknown.png`;" />
-                              <p>Mapmaking online site</p>
+                    <div class="grid-color">
+                         <h1>Projects</h1>
+                         <div class="grid-container">
+                              <div class="grid-item">
+                                   <div class="grid-item-inner"><img src="images/mapmaking-online.png" alt="mapmaking online"
+                                             onerror="this.src = `/images/unknown.png`;" /></div>
+                                   <p>Polish site for minecraft maps</p>
+                              </div>
+                              <h2>
+                                   Mapmaking online site
+                              </h2>
                          </div>
                          <div class="grid-item">
-                              <img src="images/FancyUI.png" alt="fancy ui"
-                                   onerror="this.src = `/images/unknown.png`;" />
-                              <p>Fancy-UI framework</p>
+                              <div class="grid-item-inner"><img src="images/FancyUI.png" alt="fancy ui"
+                                        onerror="this.src = `/images/unknown.png`;" /></div>
+                              <p>Fancy-UI is modern framework</p>
                          </div>
-                         <div class="grid-item">
-                              <img src="images/tools.png" alt="tools" onerror="this.src = `/images/unknown.png`;" / />
-                              <p>Tools library for C#</p>
+                         <h2>
+                              Fancy-UI framework
+                         </h2>
+                    </div>
+                    <div class="grid-item">
+                         <div class="grid-item-inner"><img src="images/tools.png" alt="tools" onerror="this.src = `/images/unknown.png`;" />
                          </div>
-                         <div class="grid-item">
-                              <img src="images/tools-site.png" alt="tools"
-                                   onerror="this.src = `/images/unknown.png`;" />
-                              <p>Site for Tools package</p>
-                         </div>
-                         <div class="grid-item">
-                              <img src="images/this-site.png" alt="portfolio"
-                                   onerror="this.src = `/images/unknown.png`;" />
-                              <p>Portfolio, you are here!</p>
-                         </div>
+                         <p>Useful library for C#</p>
+                         <h2>
+                              Tools library for C#
+                         </h2>
+                    </div>
+                    <div class="grid-item">
+                         <div><img src="images/tools-site.png" alt="tools"
+                                   onerror="this.src = `/images/unknown.png`;" /></div>
+                         <p>A site for C# Tools library</p>
+                         <h2>
+                              Site for Tools package
+                         </h2>
+                    </div>
+                    <div class="grid-item">
+                         <div><img src="images/javatool.png" alt="JavaTool"
+                                   onerror="this.src = `/images/unknown.png`;" /></div>
+                         <p>Java Utilities library, has tons of useful features</p>
+                         <h2>
+                              Tools library for Java
+                         </h2>
+                    </div>
+                    <div class="grid-item">
+                         <div><img src="images/tymianek.net.png" alt="tymianek.net"
+                                   onerror="this.src = `/images/unknown.png`;" /></div>
+                         <p>My site!</p>
+                         <h2>
+                              Tymianek.net site
+                         </h2>
+                    </div>
+                    <div class="grid-item">
+                         <div><img src="images/windows-sudo.png" alt="windows-sudo"
+                                   onerror="this.src = `/images/unknown.png`;" /></div>
+                         <p><code>sudo</code> program for windows</p>
+                         <h2>
+                              Windows sudo
+                              </22>
+                    </div>
+                    <div class="grid-item">
+                         <div><img src="images/this-site.png" alt="portfolio"
+                                   onerror="this.src = `/images/unknown.png`;" /></div>
+                         <p>You are here!</p>
+                         <h2>Portfolio</h2>
                     </div>
                </div>
+          </div>
+          </div>
           </div>
           <script src="scripts/main.js"></script>
      </body>

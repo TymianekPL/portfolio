@@ -1,13 +1,16 @@
+body {
+     margin: 0;
+}
+
 .container {
      padding-left: var(--margins);
      padding-right: var(--margins);
      margin-top: 5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
      .container {
-          padding-left: 1vw;
-          padding-right: 1vw;
+          padding: 0px;
           margin-top: 5px;
      }
      body {
