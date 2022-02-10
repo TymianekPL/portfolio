@@ -1,111 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tymianek portfolio</title>
+        <link rel="stylesheet" href="styles/main.scss" />
+        <meta name="description" content="Tymianek portfolio" />
+    </head>
 
-     <head>
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Tymianek portfolio</title>
-          <link rel="stylesheet" href="styles/main.scss">
-          <meta name="description" content="Tymianek portfolio">
-     </head>
+    <body>
+        <div class="container">
+            <div class="tab menu">
+                <button class="tablinks" onclick="openTab(event, 'Home')" id="default">Home</button>
+                <button class="tablinks" onclick="openTab(event, 'Contact')" id="#Contact">Contact</button>
+                <button class="tablinks" onclick="openTab(event, 'Projects')" id="#Projects">Projects</button>
+                <div class="title text" href="/">Tymianek portfolio</div>
+            </div>
+            <div id="snackbar"></div>
 
-     <body>
-          <div class="container">
-               <div class="tab menu">
-                    <button class="tablinks" onclick="openTab(event, 'Home')" id="default">Home</button>
-                    <button class="tablinks" onclick="openTab(event, 'Contact')" id="#Contact">Contact</button>
-                    <button class="tablinks" onclick="openTab(event, 'Projects')" id="#Projects">Projects</button>
-                    <div class="title text" href="/">Tymianek portfolio</div>
-               </div>
-               <div id="snackbar"></div>
+            <div id="Home-page" class="tabcontent">
+                <h1>Home</h1>
+                <div class="type-writer">
+                    <h1>Hello, I am Tymianek!</h1>
+                </div>
+            </div>
+            <div id="Contact-page" class="tabcontent">
+                <h1>Contact</h1>
+                Discord:
+                <address
+                    href
+                    style="display: inline; user-select: none"
+                    title="Click to copy"
+                    onclick="navigator.clipboard.writeText(this.innerHTML);showSnackbar('Copied!', 'background: #2eF920; user-select: none;');"
+                    class="typewriter"
+                >
+                    Tymianek#2403
+                </address>
+            </div>
 
-               <div id="Home-page" class="tabcontent">
-                    <h1>Home</h1>
-                    <div class="type-writer">
-                         <h1>Hello, I am Tymianek!</h1>
+            <div id="Projects-page" class="tabcontent">
+                <div class="grid-color">
+                    <h1>Projects</h1>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="grid-item-inner">
+                                <img
+                                    src="images/mapmaking-online.png"
+                                    alt="mapmaking online"
+                                    onerror="this.src = `images/unknown.png`; this.onerror = null"
+                                />
+                            </div>
+                            <p>Polish site for minecraft maps</p>
+                            <h2>Mapmaking online site</h2>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-inner">
+                                <img
+                                    src="images/FancyUI.png"
+                                    alt="fancy ui"
+                                    onerror="this.src = `images/unknown.png`; this.onerror = null"
+                                />
+                            </div>
+                            <p>Fancy-UI is modern framework</p>
+                            <h2>Fancy-UI framework</h2>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-inner">
+                                <img
+                                    src="images/tools.png"
+                                    alt="tools"
+                                    onerror="this.src = `images/unknown.png`; this.onerror = null"
+                                />
+                            </div>
+                            <p>Useful library for C#</p>
+                            <h2>Tools library for C#</h2>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-inner">
+                                <img
+                                    src="images/tools-site.png"
+                                    alt="tools"
+                                    onerror="this.src = `images/unknown.png`; this.onerror = null"
+                                />
+                            </div>
+                            <p>A site for C# Tools library</p>
+                            <h2>Site for Tools package</h2>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-inner">
+                                <img
+                                    src="images/javatool.png"
+                                    alt="JavaTool"
+                                    onerror="this.src = `images/unknown.png`; this.onerror = null"
+                                />
+                            </div>
+                            <p>Java Utilities library, has tons of useful features</p>
+                            <h2>Tools library for Java</h2>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-inner">
+                                <img
+                                    src="images/tymianek.net.png"
+                                    alt="tymianek.net"
+                                    onerror="this.src = `images/unknown.png`; this.onerror = null"
+                                />
+                            </div>
+                            <p>My site!</p>
+                            <h2>Tymianek.net site</h2>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-inner">
+                                <img
+                                    src="images/windows-sudo.png"
+                                    alt="windows-sudo"
+                                    onerror="this.src = `images/unknown.png`; this.onerror = null"
+                                />
+                            </div>
+                            <p><code>sudo</code> program for windows</p>
+                            <h2>Windows sudo</h2>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item-inner">
+                                <img
+                                    src="images/this-site.png"
+                                    alt="portfolio"
+                                    onerror="this.src = `images/unknown.png`; this.onerror = null"
+                                />
+                            </div>
+                            <p>You are here!</p>
+                            <h2>Portfolio</h2>
+                        </div>
                     </div>
-               </div>
-               <div id="Contact-page" class="tabcontent">
-                    <h1>Contact</h1>
-                    Discord: <address href style="display: inline; user-select: none;" title="Click to copy"
-                         onclick="navigator.clipboard.writeText(this.innerHTML);showSnackbar('Copied!', 'background: #2eF920; user-select: none;');"
-                         class="typewriter">Tymianek#2403</address>
-               </div>
-
-               <div id="Projects-page" class="tabcontent">
-                    <div class="grid-color">
-                         <h1>Projects</h1>
-                         <div class="grid-container">
-                              <div class="grid-item">
-                                   <div class="grid-item-inner"><img src="images/mapmaking-online.png" alt="mapmaking online"
-                                             onerror="this.src = `images/unknown.png`; this.onerror = null" /></div>
-                                   <p>Polish site for minecraft maps</p>
-                              </div>
-                              <h2>
-                                   Mapmaking online site
-                              </h2>
-                         </div>
-                         <div class="grid-item">
-                              <div class="grid-item-inner"><img src="images/FancyUI.png" alt="fancy ui"
-                                        onerror="this.src = `images/unknown.png`; this.onerror = null" /></div>
-                              <p>Fancy-UI is modern framework</p>
-                         </div>
-                         <h2>
-                              Fancy-UI framework
-                         </h2>
-                    </div>
-                    <div class="grid-item">
-                         <div class="grid-item-inner"><img src="images/tools.png" alt="tools" onerror="this.src = `images/unknown.png`; this.onerror = null" />
-                         </div>
-                         <p>Useful library for C#</p>
-                         <h2>
-                              Tools library for C#
-                         </h2>
-                    </div>
-                    <div class="grid-item">
-                         <div><img src="images/tools-site.png" alt="tools"
-                                   onerror="this.src = `images/unknown.png`; this.onerror = null" /></div>
-                         <p>A site for C# Tools library</p>
-                         <h2>
-                              Site for Tools package
-                         </h2>
-                    </div>
-                    <div class="grid-item">
-                         <div><img src="images/javatool.png" alt="JavaTool"
-                                   onerror="this.src = `images/unknown.png`; this.onerror = null" /></div>
-                         <p>Java Utilities library, has tons of useful features</p>
-                         <h2>
-                              Tools library for Java
-                         </h2>
-                    </div>
-                    <div class="grid-item">
-                         <div><img src="images/tymianek.net.png" alt="tymianek.net"
-                                   onerror="this.src = `images/unknown.png`; this.onerror = null" /></div>
-                         <p>My site!</p>
-                         <h2>
-                              Tymianek.net site
-                         </h2>
-                    </div>
-                    <div class="grid-item">
-                         <div><img src="images/windows-sudo.png" alt="windows-sudo"
-                                   onerror="this.src = `images/unknown.png`; this.onerror = null" /></div>
-                         <p><code>sudo</code> program for windows</p>
-                         <h2>
-                              Windows sudo
-                              </22>
-                    </div>
-                    <div class="grid-item">
-                         <div><img src="images/this-site.png" alt="portfolio"
-                                   onerror="this.src = `images/unknown.png`; this.onerror = null" /></div>
-                         <p>You are here!</p>
-                         <h2>Portfolio</h2>
-                    </div>
-               </div>
-          </div>
-          </div>
-          </div>
-          <script src="scripts/main.js"></script>
-     </body>
-
+                </div>
+            </div>
+        </div>
+        <script src="scripts/main.js"></script>
+    </body>
 </html>

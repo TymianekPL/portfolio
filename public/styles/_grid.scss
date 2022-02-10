@@ -48,13 +48,26 @@
      font-size: 1.4rem;
 }
 
-.grid-item .grid-item-inner{
+.grid-item > .grid-item-inner {
+     background-color: #151515;
+     border-radius: 4px;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+.grid-item > .grid-item-inner > img {
      inline-size: 100%;
      aspect-ratio: 16 / 9;
-     border-radius: 4px;
-}
-.grid-item > .grid-item-inner img {
      object-fit: cover;
+}
+
+.grid-item > .grid-item-inner > img[src*="unknown"] {
+     inline-size:25%;
+     margin: auto;
+     display: block;
+     filter: brightness(0) invert(1) opacity(.5);
 }
 
 .grid-item {
